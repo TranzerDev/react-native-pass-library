@@ -5,10 +5,10 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.bridge.Promise
 
-class PassLibraryModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
+class RNPassLibraryModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
 
     override fun getName(): String {
-        return "PassLibrary"
+        return "RNPassLibrary"
     }
 
     // Example method

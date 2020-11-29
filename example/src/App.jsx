@@ -1,12 +1,21 @@
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import PassLibrary from 'react-native-pass-library';
+import RNPassLibrary from 'react-native-pass-library';
+
+async function openPass(passUrl) {
+  try {
+    await RNPassLibrary.getRemotePKPassAndPresentPKPassView(passUrl);
+  } catch (error) {
+    console.log(error)
+  }
+}
 
 export default function App() {
   const [result, setResult] = React.useState();
 
   React.useEffect(() => {
-    PassLibrary.multiply(3, 7).then(setResult);
+    openPass('https://server.api/pass/123')
+    setResult(2)
   }, []);
 
   return (

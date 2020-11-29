@@ -1,5 +1,5 @@
 import { NativeModules } from 'react-native';
 
-const { PassLibrary } = NativeModules;
+const { RNPassLibrary } = NativeModules;
 
-export default PassLibrary;
+export default RNPassLibrary;

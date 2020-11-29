@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-
-		F4FF95D7245B92E800C19C63 /*  PassLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  PassLibrary.swift */; };
-
-		5E555C0D2413F4C50049A1A2 /* PassLibrary.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* PassLibrary.mm */; };
+		16344F7EEFC738B683ACC3C2 /* Pods_RNPassLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF1467F06E6BFE50B12A744 /* Pods_RNPassLibrary.framework */; };
+		F4FF95D7245B92E800C19C63 /* RNPassLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* RNPassLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,13 +24,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libPassLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPassLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
-
-		B3E7B5891CC2AC0600A0062D /* PassLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassLibrary.m; sourceTree = "<group>"; };
-		F4FF95D5245B92E700C19C63 /* PassLibrary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PassLibrary-Bridging-Header.h"; sourceTree = "<group>"; };
-		F4FF95D6245B92E800C19C63 /* PassLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassLibrary.swift; sourceTree = "<group>"; };
-
+		134814201AA4EA6300B7C361 /* libRNPassLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPassLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C369A625D310BF457C4863 /* Pods-PassLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassLibrary.debug.xcconfig"; path = "Target Support Files/Pods-PassLibrary/Pods-PassLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		4B9AD4FB0BD360EFE885453D /* Pods-RNPassLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNPassLibrary.release.xcconfig"; path = "Target Support Files/Pods-RNPassLibrary/Pods-RNPassLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		9AF1467F06E6BFE50B12A744 /* Pods_RNPassLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNPassLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A060D26AC526C1FC9D255A1B /* Pods-RNPassLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNPassLibrary.debug.xcconfig"; path = "Target Support Files/Pods-RNPassLibrary/Pods-RNPassLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		A38319344002BF9D2A28DB4B /* Pods-PassLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassLibrary.release.xcconfig"; path = "Target Support Files/Pods-PassLibrary/Pods-PassLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* RNPassLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPassLibrary.m; sourceTree = "<group>"; };
+		F4FF95D5245B92E700C19C63 /* RNPassLibrary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNPassLibrary-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4FF95D6245B92E800C19C63 /* RNPassLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNPassLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16344F7EEFC738B683ACC3C2 /* Pods_RNPassLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +50,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libPassLibrary.a */,
+				134814201AA4EA6300B7C361 /* libRNPassLibrary.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,23 +58,42 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
-
-				F4FF95D6245B92E800C19C63 /* PassLibrary.swift */,
-				B3E7B5891CC2AC0600A0062D /* PassLibrary.m */,
-				F4FF95D5245B92E700C19C63 /* PassLibrary-Bridging-Header.h */,
-
+				F4FF95D5245B92E700C19C63 /* RNPassLibrary-Bridging-Header.h */,
+				B3E7B5891CC2AC0600A0062D /* RNPassLibrary.m */,
+				F4FF95D6245B92E800C19C63 /* RNPassLibrary.swift */,
+				D691492962C0C4EDE429B6D0 /* Frameworks */,
+				C37AA966708BCC43E2552027 /* Pods */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		C37AA966708BCC43E2552027 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40C369A625D310BF457C4863 /* Pods-PassLibrary.debug.xcconfig */,
+				A38319344002BF9D2A28DB4B /* Pods-PassLibrary.release.xcconfig */,
+				A060D26AC526C1FC9D255A1B /* Pods-RNPassLibrary.debug.xcconfig */,
+				4B9AD4FB0BD360EFE885453D /* Pods-RNPassLibrary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D691492962C0C4EDE429B6D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AF1467F06E6BFE50B12A744 /* Pods_RNPassLibrary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* PassLibrary */ = {
+		58B511DA1A9E6C8500147676 /* RNPassLibrary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "PassLibrary" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNPassLibrary" */;
 			buildPhases = (
+				7D431F384AD40A88313C0D60 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -83,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = PassLibrary;
+			name = RNPassLibrary;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libPassLibrary.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libRNPassLibrary.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "PassLibrary" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNPassLibrary" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -115,21 +134,42 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* PassLibrary */,
+				58B511DA1A9E6C8500147676 /* RNPassLibrary */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D431F384AD40A88313C0D60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNPassLibrary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-
-				F4FF95D7245B92E800C19C63 /* PassLibrary.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* PassLibrary.m in Sources */,
-
+				F4FF95D7245B92E800C19C63 /* RNPassLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +219,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -222,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -231,6 +271,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A060D26AC526C1FC9D255A1B /* Pods-RNPassLibrary.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -240,18 +281,17 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = PassLibrary;
+				PRODUCT_NAME = RNPassLibrary;
 				SKIP_INSTALL = YES;
-
-				SWIFT_OBJC_BRIDGING_HEADER = "PassLibrary-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "RNPassLibrary-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9AD4FB0BD360EFE885453D /* Pods-RNPassLibrary.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -261,19 +301,17 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = PassLibrary;
+				PRODUCT_NAME = RNPassLibrary;
 				SKIP_INSTALL = YES;
-
-				SWIFT_OBJC_BRIDGING_HEADER = "PassLibrary-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "RNPassLibrary-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "PassLibrary" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNPassLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -282,7 +320,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "PassLibrary" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNPassLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,
