@@ -87,13 +87,13 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				20F357AF24636CDF00C146DC /* File.swift */,
 				20F357AE24636CDF00C146DC /* PassLibraryExample-Bridging-Header.h */,
-				13B07FAE1A68108700A75B9A /* PassLibraryExample */,
-				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				83CBBA001A601CBA00E9B192 /* Products */,
+				20F357AF24636CDF00C146DC /* File.swift */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				13B07FAE1A68108700A75B9A /* PassLibraryExample */,
 				1CFFDEF7170271C97B8B7E5A /* Pods */,
+				83CBBA001A601CBA00E9B192 /* Products */,
 				20F357AD24636CDE00C146DC /* PassLibraryExample-Bridging-Header.h */,
 			);
 			indentWidth = 2;
