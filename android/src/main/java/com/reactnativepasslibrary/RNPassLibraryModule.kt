@@ -11,14 +11,9 @@ class RNPassLibraryModule(reactContext: ReactApplicationContext) : ReactContextB
         return "RNPassLibrary"
     }
 
-    // Example method
-    // See https://facebook.github.io/react-native/docs/native-modules-android
     @ReactMethod
-    fun multiply(a: Int, b: Int, promise: Promise) {
-    
-      promise.resolve(a * b)
-    
+    fun getRemotePKPassAndPresentPKPassView(urlString: String, promise: Promise) {
+        promise.reject(Exception("This library is not supported on Android!"))
     }
 
-    
 }
