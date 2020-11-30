@@ -6,6 +6,11 @@ public class RNPassLibrary: NSObject {
 
     private let passLibrary = PassLibrary() // From PassLibrary
 
+    enum RNPassLibraryErrors: Error {
+        case notAValidUrl
+        case noKeyWindow
+    }
+
     @objc
     public func constantsToExport() -> [AnyHashable: Any]! {
         return ["name": "RNPassLibrary"]
@@ -16,7 +21,8 @@ public class RNPassLibrary: NSObject {
                                                     resolver resolve: @escaping RCTPromiseResolveBlock,
                                                     rejecter reject: @escaping RCTPromiseRejectBlock) {
         guard let pkPassUrl = URL(string: urlString) else {
-            // TODO: Handle with rejecter
+            let error = RNPassLibraryErrors.notAValidUrl
+            reject("error", error.localizedDescription, error)
             return
         }
         self.passLibrary.getRemotePKPass(from: pkPassUrl) { (result: Result<Data, Error>) in
@@ -26,8 +32,8 @@ public class RNPassLibrary: NSObject {
             case .success(let pkpassData):
                 DispatchQueue.main.async {
                     guard let keyWindow = UIApplication.shared.keyWindow else {
-                        // TODO: Handle with rejecter
-                        return
+                        let error = RNPassLibraryErrors.noKeyWindow
+                        reject("error", error.localizedDescription, error)
                     }
                     do {
                         try self.passLibrary.presentAddPKPassViewController(window: keyWindow, pkpassData: pkpassData)
@@ -45,4 +51,15 @@ public class RNPassLibrary: NSObject {
         true
     }
 
+}
+
+extension RNPassLibrary.RNPassLibraryErrors: LocalizedError {
+    public var errorDescription: String? {
+        switch self {
+        case .notAValidUrl:
+            return "The url provided is not valid"
+        case .noKeyWindow:
+            return "Could not find the key window"
+        }
+    }
 }
