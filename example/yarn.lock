@@ -3444,7 +3444,7 @@ react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4:
 
 "react-native-pass-library@https://github.com/kamaal111/react-native-pass-library.git":
   version "0.1.0"
-  resolved "https://github.com/kamaal111/react-native-pass-library.git#0a699d146f64dcb8a805eab730bef1d6185c3a44"
+  resolved "https://github.com/kamaal111/react-native-pass-library.git#8c845c1a41ca56d351e4e4cc871e3ff18f5b9b46"
 
 react-native@0.62.2:
   version "0.62.2"
