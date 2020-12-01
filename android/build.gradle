@@ -129,48 +129,41 @@
 //   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 // }
 
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 buildscript {
     ext {
-        kotlinVersion = '1.3.11'
-        androidToolsVersion = '3.2.1'
+        buildToolsVersion = "28.0.3"
+        minSdkVersion = 16
+        compileSdkVersion = 28
+        targetSdkVersion = 28
     }
-
     repositories {
         google()
-        mavenCentral()
+        jcenter()
     }
-
     dependencies {
-        classpath "com.android.tools.build:gradle:${project.ext.androidToolsVersion}"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${project.ext.kotlinVersion}"
+        classpath("com.android.tools.build:gradle:3.5.2")
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
     }
 }
 
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
+allprojects {
+    repositories {
+        mavenLocal()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url("$rootDir/../node_modules/react-native/android")
+        }
+        maven {
+            // Android JSC is installed from npm
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
 
-
-repositories {
-    google()
-}
-
-android {
-    compileSdkVersion 28
-
-    defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0.0"
+        google()
+        jcenter()
+        maven { url 'https://www.jitpack.io' }
     }
-    lintOptions {
-        abortOnError false
-    }
-
-}
-
-dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${project.ext.kotlinVersion}"
-    implementation "com.pierfrancescosoffritti.androidyoutubeplayer:core:8.0.1"
-    implementation "com.facebook.react:react-native:+"  // From node_modules
 }
