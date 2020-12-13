@@ -29,17 +29,21 @@ public class RNPassLibrary: NSObject {
             switch result {
             case .failure(let failure):
                 reject("error", failure.localizedDescription, failure)
+                return
             case .success(let pkpassData):
                 DispatchQueue.main.async {
                     guard let keyWindow = UIApplication.shared.keyWindow else {
                         let error = RNPassLibraryErrors.noKeyWindow
                         reject("error", error.localizedDescription, error)
+                        return
                     }
                     do {
                         try self.passLibrary.presentAddPKPassViewController(window: keyWindow, pkpassData: pkpassData)
                         resolve(true)
+                        return
                     } catch {
                         reject("error", error.localizedDescription, error)
+                        return
                     }
                 }
             }
