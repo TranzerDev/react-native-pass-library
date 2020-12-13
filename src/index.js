@@ -10,4 +10,5 @@ const library = {
         return await RNPassLibrary.getRemotePKPassAndPresentPKPassView(url)
     }
 }
+
 export default library;

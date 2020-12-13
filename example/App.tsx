@@ -1,26 +1,22 @@
 import * as React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Button } from 'react-native';
+// @ts-ignore
 import RNPassLibrary from 'react-native-pass-library';
 
-async function openPass(passUrl) {
+async function openPass(passUrl: string) {
   try {
     await RNPassLibrary.getRemotePKPassAndPresentPKPassView(passUrl);
   } catch (error) {
-    console.log(error)
+    console.error(error)
   }
 }
 
 export default function App() {
-  const [result, setResult] = React.useState();
-
-  React.useEffect(() => {
-    openPass('https://server.api/pass/123')
-    setResult(2)
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button onPress={()=> {
+        openPass('https://tranzer-wallet-passes-dev.s3.eu-central-1.amazonaws.com/passes/bb3e4650-7cc1-4aa9-8c0a-73af0ce8296d.pkpass')
+      }} title={'Open Pass'} />
     </View>
   );
 }
