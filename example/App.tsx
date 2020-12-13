@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { StyleSheet, View, Button } from 'react-native';
+import { StyleSheet, View, Button, Platform } from 'react-native';
 // @ts-ignore
 import RNPassLibrary from 'react-native-pass-library';
+import pkpass from "pkpass.json";
 
 async function openPass(passUrl: string) {
   try {
@@ -15,7 +16,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Button onPress={()=> {
-        openPass('https://tranzer-wallet-passes-dev.s3.eu-central-1.amazonaws.com/passes/bb3e4650-7cc1-4aa9-8c0a-73af0ce8296d.pkpass')
+        console.log(Platform.OS)
+        openPass(pkpass.test)
       }} title={'Open Pass'} />
     </View>
   );
