@@ -19,7 +19,7 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/kamaal111/react-native-pass-library",
+  "repository": "git@github.com:kamaal111/react-native-pass-library.git",
   "author": "kamaal111 <kamaal.f1@gmail.com> (https://github.com/kamaal111)",
   "license": "MIT",
   "bugs": {
