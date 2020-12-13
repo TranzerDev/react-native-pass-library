@@ -7,6 +7,10 @@ import com.facebook.react.bridge.Promise;
 
 public class RNPassLibraryModule extends ReactContextBaseJavaModule {
 
+	public RNPassLibraryModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+    }
+
     @Override
     public String getName() {
         return "RNPassLibrary";  // Name of the Native Modules.

@@ -16,7 +16,7 @@ public class class RNPassLibraryPackage extends ReactPackage {
         // return Arrays.asList<NativeModule>(RNPassLibraryModule(reactContext))
         List<NativeModule> modules = new ArrayList<>();
         // Register the encryption module
-        modules.add(new RNPassLibraryModule());
+        modules.add(new RNPassLibraryModule(reactContext));
         return modules;
     }
 
