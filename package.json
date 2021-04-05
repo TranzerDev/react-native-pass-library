@@ -1,6 +1,6 @@
 {
   "name": "react-native-pass-library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A package to open pk pass on iOS",
   "main": "src/index",
   "source": "src/index",
@@ -20,7 +20,7 @@
     "android"
   ],
   "repository": {
-    "type":"git",
+    "type": "git",
     "url": "https://github.com/kamaal111/react-native-pass-library.git"
   },
   "author": "kamaal111 <kamaal.f1@gmail.com> (https://github.com/kamaal111)",
@@ -71,7 +71,10 @@
       ]
     }
   },
-  "eslintIgnore": ["node_modules/", "lib/"],
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,
