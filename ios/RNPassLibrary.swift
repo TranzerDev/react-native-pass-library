@@ -9,6 +9,7 @@ public class RNPassLibrary: NSObject {
     enum RNPassLibraryErrors: Error {
         case notAValidUrl
         case noKeyWindow
+        case selfMissing
     }
 
     @objc
@@ -25,27 +26,24 @@ public class RNPassLibrary: NSObject {
             reject("error", error.localizedDescription, error)
             return
         }
-        self.passLibrary.getRemotePKPass(from: pkPassUrl) { (result: Result<Data, Error>) in
-            switch result {
-            case .failure(let failure):
-                reject("error", failure.localizedDescription, failure)
-                return
-            case .success(let pkpassData):
-                DispatchQueue.main.async {
-                    guard let keyWindow = UIApplication.shared.keyWindow else {
-                        let error = RNPassLibraryErrors.noKeyWindow
-                        reject("error", error.localizedDescription, error)
-                        return
-                    }
-                    do {
-                        try self.passLibrary.presentAddPKPassViewController(window: keyWindow, pkpassData: pkpassData)
-                        resolve(true)
-                        return
-                    } catch {
-                        reject("error", error.localizedDescription, error)
-                        return
-                    }
-                }
+
+        guard let keyWindow = UIApplication.shared.keyWindow else {
+            let error = RNPassLibraryErrors.noKeyWindow
+            reject("error", error.localizedDescription, error)
+            return
+        }
+
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else {
+                let error = RNPassLibraryErrors.selfMissing
+                reject("error", error.localizedDescription, error)
+                return 
+            }
+            do {
+                try self.passLibrary.presentAddPKPassViewController(keyWindow, from: pkPassUrl)
+                resolve(true)
+            } catch {
+                reject("error", error.localizedDescription, error)
             }
         }
     }
@@ -60,10 +58,9 @@ public class RNPassLibrary: NSObject {
 extension RNPassLibrary.RNPassLibraryErrors: LocalizedError {
     public var errorDescription: String? {
         switch self {
-        case .notAValidUrl:
-            return "The url provided is not valid"
-        case .noKeyWindow:
-            return "Could not find the key window"
+        case .notAValidUrl: return "The url provided is not valid"
+        case .noKeyWindow: return "Could not find the key window"
+        case .selfMissing: return "Missing reference to self"
         }
     }
 }
