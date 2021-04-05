@@ -5564,10 +5564,10 @@ react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-native-pass-library@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-pass-library/-/react-native-pass-library-0.1.0.tgz#f0fea2e84b7b51d0ef4a7a0859a375fcd9280975"
-  integrity sha512-obqQJ/y2Y5EixYe73QkI9ef+ZNk/ZidzRTbZyK/ch8gO6jF3HdPX5Rcp/iwkGvw5E/J8vnPey95KOhj6Ov0WoA==
+react-native-pass-library@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-pass-library/-/react-native-pass-library-0.1.2.tgz#50e9b17f187a0580948a45183d7185d9734f98e4"
+  integrity sha512-Tdt7X7GNh46rLUQwjM5fgwOV0CZid5+lms94t7HxR1VOLA0nd8oY5y8vM1h3y6JBIkJECYApMlbp6w3pi6ZyrQ==
 
 react-native@0.63.3:
   version "0.63.3"
