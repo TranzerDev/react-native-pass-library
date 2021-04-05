@@ -1,0 +1,20 @@
+PODS:
+  - PassLibrary (2.1.2):
+    - XiphiasNet (~> 3.0.5)
+  - XiphiasNet (3.0.5)
+
+DEPENDENCIES:
+  - PassLibrary (~> 2.1.2)
+
+SPEC REPOS:
+  trunk:
+    - PassLibrary
+    - XiphiasNet
+
+SPEC CHECKSUMS:
+  PassLibrary: 053dcea4eeda823b3aa380b3797960a0416ec08d
+  XiphiasNet: 6ef4010ec8e41b0fc596c4fece50bc7d64568659
+
+PODFILE CHECKSUM: c64bb7e84e8c92a200a1255cdf67030bbecfc76f
+
+COCOAPODS: 1.10.1
