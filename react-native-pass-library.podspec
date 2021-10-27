@@ -10,13 +10,11 @@ Pod::Spec.new do |s|
   s.license      = package["license"]
   s.authors      = package["author"]
 
-  s.platforms    = { :ios => "9.0" }
-  s.source       = { :git => "https://github.com/kamaal111/react-native-pass-library.git", :tag => "#{s.version}" }
+  s.platforms    = { :ios => "10.0" }
+  s.source       = { :git => "https://github.com/TranzerDev/react-native-userdefaults.git", :tag => "#{s.version}" }
 
-  
   s.source_files = "ios/**/*.{h,m,mm,swift}"
-  
 
-  s.dependency "React"
+  s.dependency "React-Core"
   s.dependency "PassLibrary", "~> 3.0"
 end

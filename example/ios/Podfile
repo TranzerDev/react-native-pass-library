@@ -3,25 +3,8 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'example' do
+target 'PassLibraryExample' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
-
-  target 'exampleTests' do
-    inherit! :complete
-    # Pods for testing
-  end
-
-  post_install do |installer|
-  end
-end
-
-target 'example-tvOS' do
-  # Pods for example-tvOS
-
-  target 'example-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 end
