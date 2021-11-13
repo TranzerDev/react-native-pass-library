@@ -186,7 +186,7 @@ PODS:
     - React-cxxreact (= 0.63.4)
     - React-jsi (= 0.63.4)
   - React-jsinspector (0.63.4)
-  - react-native-pass-library (0.1.0):
+  - react-native-pass-library (0.1.8):
     - PassLibrary (~> 3.0)
     - React-Core
   - React-RCTActionSheet (0.63.4):
@@ -361,7 +361,7 @@ SPEC CHECKSUMS:
   React-jsi: a0418934cf48f25b485631deb27c64dc40fb4c31
   React-jsiexecutor: 93bd528844ad21dc07aab1c67cb10abae6df6949
   React-jsinspector: 58aef7155bc9a9683f5b60b35eccea8722a4f53a
-  react-native-pass-library: 7d63b4615d981551363867867c026bf2109ccb4b
+  react-native-pass-library: 2a19eefb29d8d26bfd7a3ed50e7ed4005adb41cd
   React-RCTActionSheet: 89a0ca9f4a06c1f93c26067af074ccdce0f40336
   React-RCTAnimation: 1bde3ecc0c104c55df246eda516e0deb03c4e49b
   React-RCTBlob: a97d378b527740cc667e03ebfa183a75231ab0f0
@@ -376,4 +376,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 4d92bd632e1570e914b9d4c4b74ce98b5708a3d9
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.10.1
